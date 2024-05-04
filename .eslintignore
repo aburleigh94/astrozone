@@ -4,3 +4,4 @@ node_modules
 .changeset
 astro.config.ts
 tailwind.config.ts
+site.config.ts
