@@ -10,7 +10,6 @@ module.exports = {
 		"plugin:@typescript-eslint/recommended",
 		"plugin:astro/recommended",
 		"plugin:astro/jsx-a11y-recommended",
-		"plugin:perfectionist/recommended-natural",
 		"plugin:regexp/recommended",
 		"plugin:typescript-sort-keys/recommended",
 		"plugin:deprecation/recommended",
@@ -63,5 +62,6 @@ module.exports = {
 			{ ignoreRestSiblings: true, varsIgnorePattern: "Props" },
 		],
 		"@typescript-eslint/no-var-requires": "warn",
+    "typescript-sort-keys/interface": "off",
 	},
 };
