@@ -1,14 +1,12 @@
 ---
 template: post
-title: Game of the Year 2020
-slug: game-of-the-year-2020
+title: Top Ten Games 2020
 socialImage: sc8lik.png
 draft: false
 publishDate: 2021-07-22T00:00:00.000Z
 description: Just in time for August, it's my favorite games of 2020.
 category: gaming
-tags:
-  - "Game of the Year"
+tags: [ "Top Ten Games" ]
 ---
 I realized this month that it's over halfway through 2021 and I've been too lazy to write about my favorite games of 2020. Since I'm still feeling lazy I'm going to keep this short, but I figured there's no point in me keeping a list if I'm not going to do anything with it. Here we go.
 

@@ -1,14 +1,10 @@
 ---
-template: post
-title: Game of the Year 2018
-slug: game-of-the-year-2018
+title: Top Ten Games 2018
 socialImage: qseegzssgetrybgbplrv.jpg
 draft: false
 publishDate: 2018-12-27T04:09:00.000Z
 description: There were a lot of great games released in 2018. Here are some of them.
-category: gaming
-tags:
-  - "Game of the Year"
+tags: [ "Top Ten Games" ]
 ---
 As I look back at the games that were released in 2018, I am once again amazed by the number of quality titles the industry has been putting out on a consistent basis. While this year also had it's share of disappointing garbage, I feel confident saying that there has never been a better time to be playing video games. The fall season was especially jam packed, and I'm still catching up on a few games which may or may not supersede the ones on this list. However, I feel that each of these choices are truly fantastic games in their own right and are deserving of recognition as some of the best games of 2018.
 
