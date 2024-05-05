@@ -1,7 +1,7 @@
 {
-	"name": "Astro Theme Cactus Demo",
-	"short_name": "Astro_Cactus",
-	"description": "Starter blog site for Astro",
+	"name": "burleigh.zone",
+	"short_name": "burleigh_zone",
+	"description": "Personal website of Andrew Burleigh",
 	"icons": [
 		{
 			"src": "/192x192.png",
