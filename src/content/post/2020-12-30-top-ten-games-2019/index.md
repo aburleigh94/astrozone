@@ -1,11 +1,9 @@
 ---
-template: post
 title: Top Ten Games 2019
 socialImage: image.jpg
 draft: false
 publishDate: 2020-01-05T19:40:34.056Z
 description: These games are da bomb.
-category: gaming
 tags: [ "Top Ten Games" ]
 ---
 I'm always glad to be surprised by new games. As someone who usually keeps a close eye on gaming news through social media and podcasts, I sometimes miss the feeling of finding a game that I haven't heard of before and playing it for the first time. So many of my favorite games this year either flew under my personal radar or released unexpectedly, and it was fun to jump into them without any prior expectations.

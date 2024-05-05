@@ -1,11 +1,9 @@
 ---
-template: post
 title: Top Ten Games 2020
 socialImage: sc8lik.png
 draft: false
 publishDate: 2021-07-22T00:00:00.000Z
 description: Just in time for August, it's my favorite games of 2020.
-category: gaming
 tags: [ "Top Ten Games" ]
 ---
 I realized this month that it's over halfway through 2021 and I've been too lazy to write about my favorite games of 2020. Since I'm still feeling lazy I'm going to keep this short, but I figured there's no point in me keeping a list if I'm not going to do anything with it. Here we go.
@@ -20,7 +18,7 @@ The Tony Hawk community really deserved another good game after the disaster of 
 
 ![](TING_WD_Screenshot_04.jpg)
 
-I found the demo version of this game through a Steam recommendation and I was pleasantly surprised so I decided to purchase the full thing. It grabbed me enough to beat the entire game in just a day or two. The goofy humor really worked for me and the puzzles were pretty inventive and fun. The game uses it's fourth wall breaking theme to great effect in the story, especially towards the end of the game.
+I found the demo version of this game through a Steam recommendation and I was pleasantly surprised so I decided to purchase the full thing. It grabbed me enough to beat the entire game in just a day or two. The goofy humor really worked for me and the puzzles were pretty inventive and fun. The game uses its fourth wall breaking theme to great effect in the story, especially towards the end of the game.
 
 ### 8. F1 2020
 
@@ -56,7 +54,7 @@ I've put way too much time into this game and have a love/hate relationship with
 
 ![](sc8i93.jpg)
 
-The story of the Last of Us 2 is going to stick with me for a long time. It was controversial in the gaming community for a few different reasons, but I really enjoyed the direction they took the story after the first game and the new characters that they introduced. It was definitely quite depressing and heavy at times but I never found myself wanting to put the game down. As someone who loved the combat in the original game, this one feels even better with the new combat options and violent character animations. The enemy AI was also some of the most fun that I've experienced with it's ability to react to your character's actions.
+The story of the Last of Us 2 is going to stick with me for a long time. It was controversial in the gaming community for a few different reasons, but I really enjoyed the direction they took the story after the first game and the new characters that they introduced. It was definitely quite depressing and heavy at times but I never found myself wanting to put the game down. As someone who loved the combat in the original game, this one feels even better with the new combat options and violent character animations. The enemy AI was also some of the most fun that I've experienced with its ability to react to your character's actions.
 
 ### 2. Ghost of Tsushima
 
@@ -68,4 +66,4 @@ I thought I was sick of the Assassin's Creed type of open world games but I gues
 
 ![](sc8lik.png)
 
-I was first turned on to Supergiant Games with Bastion and became aware of Hades during it's time in early access. I wasn't considering picking it up immediately since I usually get a limited amount of enjoyment out of roguelike games. Once I did start playing though, I immediately understood why the full release was getting so many good reviews. The controls and combat are top-tier, the different weapons are all fun to use, and the powerups open the way to lots of fun synergies and builds. The story was the aspect of the game that surprised me the most. The dialogue of the characters changes in between runs and you soon realize just how much effort the developers put into reacting to the main character's actions. Having the cross-save capability between Switch and PC was just the cherry on top for me and I'll continue to play this game for a very long time.
+I was first turned on to Supergiant Games with Bastion and became aware of Hades during its time in early access. I wasn't considering picking it up immediately since I usually get a limited amount of enjoyment out of roguelike games. Once I did start playing though, I immediately understood why the full release was getting so many good reviews. The controls and combat are top-tier, the different weapons are all fun to use, and the powerups open the way to lots of fun synergies and builds. The story was the aspect of the game that surprised me the most. The dialogue of the characters changes in between runs and you soon realize just how much effort the developers put into reacting to the main character's actions. Having the cross-save capability between Switch and PC was just the cherry on top for me and I'll continue to play this game for a very long time.
