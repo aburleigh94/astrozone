@@ -17,5 +17,9 @@
 	],
 	"[astro]": {
 		"editor.defaultFormatter": "astro-build.astro-vscode"
-	}
+	},
+  "colorize.languages": [
+    "javascript",
+    "astro"
+  ]
 }
