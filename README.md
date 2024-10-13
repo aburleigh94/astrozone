@@ -1,17 +1,6 @@
 # astrozone
 Personal website created with Astro. Originally cloned from https://github.com/danielecammarata/astro-gaia
 
-
-# AstroGaia: Template using Astro, Tailwind CSS, ReactJS and shadcn/ui.
-
-AstroGaia is a single-author portfolio theme for Astro.js, mostly oriented to a software developer.
-
-![AstroGaia Theme](public/gaia-preview.png)
-
-[![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danielecammarata/astro-gaia)
-
-If you click this☝️ button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
-
 ## Theme Features:
 
 - ✅ Portfolio collection
