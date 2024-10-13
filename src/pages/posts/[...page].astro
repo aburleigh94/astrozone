@@ -1,104 +1,94 @@
 ---
-import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import { CONFIG } from "@/config";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { reformatDate, sortItemsByDateDesc } from "@/lib";
 
-import Pagination from "@/components/Paginator.astro";
-import PostPreview from "@/components/blog/PostPreview.astro";
-import PageLayout from "@/layouts/Base.astro";
-import { getAllPosts, getUniqueTags, sortMDByDate } from "@/data/post";
-
-export const getStaticPaths = (async ({ paginate }) => {
-	const allPosts = await getAllPosts();
-	const allPostsByDate = sortMDByDate(allPosts);
-	const uniqueTags = getUniqueTags(allPosts);
-	return paginate(allPostsByDate, { pageSize: 10, props: { uniqueTags } });
-}) satisfies GetStaticPaths;
-
-interface Props {
-	page: Page<CollectionEntry<"post">>;
-	uniqueTags: string[];
+export async function getStaticPaths() {
+	const posts = (await getCollection("blog")).sort(sortItemsByDateDesc);
+	const { categories } = CONFIG;
+	return categories.map(({ page }) => ({
+		params: { page },
+		props: {
+			posts: page
+				? posts.filter((post: CollectionEntry<"blog">) =>
+						post.data.category?.includes(page),
+					)
+				: posts,
+			currentPage: page,
+		},
+	}));
 }
 
-const { page, uniqueTags } = Astro.props;
-
-const meta = {
-	description: "Ready my collection of posts and the things that interest me",
-	title: "Posts",
-};
-
-const paginationProps = {
-	...(page.url.prev && {
-		prevUrl: {
-			text: `← Previous Posts`,
-			url: page.url.prev,
-		},
-	}),
-	...(page.url.next && {
-		nextUrl: {
-			text: `Next Posts →`,
-			url: page.url.next,
-		},
-	}),
-};
+const { posts, currentPage } = Astro.props;
 ---
 
-<PageLayout meta={meta}>
-	<h1 class="title mb-6">Posts</h1>
-	<div class="grid gap-y-16 sm:grid-cols-[3fr_1fr] sm:gap-x-8">
-		<section aria-label="Blog post list">
-			<ul class="space-y-8 text-start">
-				{
-					page.data.map((p) => (
-						<li class="flex flex-col flex-wrap gap-2 sm:flex-row [&_q]:basis-full">
-							<PostPreview as="h2" post={p} withDesc />
-						</li>
-					))
-				}
-			</ul>
-			<Pagination {...paginationProps} />
-		</section>
-		{
-			!!uniqueTags.length && (
-				<aside>
-					<h2 class="mb-4 flex items-center text-lg font-semibold">
-						<svg
-							aria-hidden="true"
-							class="h-6 w-6"
-							fill="none"
-							stroke="currentColor"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="1.5"
-							viewBox="0 0 24 24"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path d="M0 0h24v24H0z" fill="none" stroke="none" />
-							<path d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z" />
-							<path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116" />
-							<path d="M6 9h-.01" />
-						</svg>
-						Tags
-					</h2>
-					<ul class="flex flex-wrap gap-2 text-bgColor">
-						{uniqueTags.map((tag) => (
-							<li>
-								<a
-									aria-label={`View all posts with the tag: ${tag}`}
-									class="flex items-center justify-center rounded-lg bg-accent p-1"
-									href={`/tags/${tag}/`}
-								>
-									{tag}
-								</a>
-							</li>
-						))}
-					</ul>
-					<span class="mt-4 block sm:text-end">
-						<a aria-label="View all blog categories" class="sm:hover:text-accent" href="/tags/">
-							View all →
-						</a>
-					</span>
-				</aside>
-			)
-		}
-	</div>
-</PageLayout>
+<BaseLayout
+  title="Blog"
+  description="Embark on a journey of personal insights and experiences through my blog"
+>
+<div class="grid grid-cols-1 gap-10 pb-10 w-full">
+    <div class="flex flex-col">
+      <a href="/"
+      class="flex flex-row space-x-2 items-center group cursor-pointer mb-4 animate-slide-from-down-and-fade-1"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          class="text-secondaryDarker group-hover:-translate-x-1 duration-200 rotate-180"
+        >
+          <path
+            fill="currentColor"
+            fill="evenodd"
+            d="M1.25 8A.75.75 0 0 1 2 7.25h10.19L9.47 4.53a.75.75 0 0 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H2A.75.75 0 0 1 1.25 8"
+            clip="evenodd"></path>
+        </svg>
+        <span class="text-secondaryDarker">Back</span>
+      </a>
+      <span class="text-4xl font-bold mb-6 md:mb-4 animate-slide-from-down-and-fade-2"> All Posts </span>
+      <div class="flex flex-row space-x-4 mb-6 md:mb-4 text-sm  overflow-x-auto line-clamp-1 text-nowrap animate-slide-from-down-and-fade-3">
+        {
+          CONFIG.categories.map(({ page, title, href }) => (
+            <a
+              href={href}
+              class={`${currentPage === page ? 'text-secondaryDark underline' : 'text-secondaryDarker'} hover:text-secondaryDark duration-200 hover:underline`}
+          > {title} </a>
+          ))
+        }
+      </div>
+      <div>
+        <div class="grid grid-cols-1 gap-6 md:gap-1 md:-px-2 animate-slide-from-down-and-fade-3">
+          {
+            posts
+              .sort((a: any, b: any) => {
+                if (
+                  new Date(a.data.publishedAt) > new Date(b.data.publishedAt)
+                ) {
+                  return -1;
+                }
+                return 1;
+              })
+              .map((post: any) => {
+                return (
+                  <a href={`/posts/${post.slug}`}
+                  class="flex flex-row space-x-2 justify-between items-start duration-300 md:hover:bg-hoverBackground -mx-4 p-4 rounded-lg cursor-pointer"
+                  >
+                    <span class="text-secondaryDark">{post.data.title}</span>
+
+                    <div class="flex flex-row space-x-2 items-center text-secondaryDarker whitespace-nowrap">
+                      <span>
+                        {reformatDate(post.data.publishedAt)}
+                      </span>
+                    </div>
+                  </a>
+                );
+              })
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

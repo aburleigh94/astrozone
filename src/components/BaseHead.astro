@@ -1,82 +1,82 @@
 ---
-import type { SiteMeta } from "@/types";
+import "@/styles/globals.css";
+import { CONFIG } from "@/config";
 
-import { siteConfig } from "@/site-config";
+export type Props = {
+	title?: string;
+	description?: string;
+	image?: { src: string; alt?: string };
+	pageType?: "website" | "article";
+};
 
-import "../styles/global.css";
+const {
+	description = "",
+	image = CONFIG.meta.image,
+	pageType = "website",
+} = Astro.props;
+const title = [Astro.props.title, CONFIG.meta.title]
+	.filter(Boolean)
+	.join(" | ");
+const resolvedImage = image?.src
+	? {
+			src: new URL(image.src, Astro.site).toString(),
+			alt: image.alt,
+		}
+	: undefined;
+const canonicalURL = new URL(Astro.request.url, Astro.site);
 
-type Props = SiteMeta;
-
-const { articleDate, description, ogImage, title } = Astro.props;
-
-const titleSeparator = "•";
-const siteTitle = `${title} ${titleSeparator} ${siteConfig.title}`;
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url).href;
+/**
+ * Enforce some standard canonical URL formatting across the site.
+ */
+function formatCanonicalURL(url: string | URL) {
+	const path = url.toString();
+	const hasQueryParams = path.includes("?");
+	// If there are query params, make sure the URL has no trailing slash
+	if (hasQueryParams) {
+		path.replace(/\/?$/, "");
+	}
+	// otherwise, canonical URL always has a trailing slash
+	return path.replace(/\/?$/, hasQueryParams ? "" : "/");
+}
 ---
 
+<!-- High Priority Global Metadata -->
 <meta charset="utf-8" />
-<meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
-<meta content="IE=edge" http-equiv="X-UA-Compatible" />
-<title>{siteTitle}</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>{title}</title>
+<meta name="generator" content={Astro.generator} />
 
-{/* Icons / Favicon */}
-<link href="/favicon.ico" rel="icon" sizes="any" />
-<link href="/icon.svg" rel="icon" type="image/svg+xml" />
-<link href="/apple-touch-icon.png" rel="apple-touch-icon" />
-<link href="/manifest.webmanifest" rel="manifest" />
-<link href={canonicalURL} rel="canonical" />
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+/>
 
-{/* Primary Meta Tags */}
-<meta content={siteTitle} name="title" />
-<meta content={description} name="description" />
-<meta content={siteConfig.author} name="author" />
+<!-- Low Priority Global Metadata -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16">
+<link rel="icon" href="/icon.png" type="image/png" sizes="256x256">
+<link rel="apple-touch-icon" href="/apple-icon.png" type="image/png" sizes="256x256">
+<link rel="sitemap" href="/sitemap-index.xml" />
+<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS" />
 
-{/* Theme Colour */}
-<meta content="" name="theme-color" />
+<!-- Page Metadata -->
+<link rel="canonical" href={formatCanonicalURL(canonicalURL)} />
+<meta name="description" content={description} />
 
-{/* Open Graph / Facebook */}
-<meta content={articleDate ? "article" : "website"} property="og:type" />
-<meta content={title} property="og:title" />
-<meta content={description} property="og:description" />
-<meta content={canonicalURL} property="og:url" />
-<meta content={siteConfig.title} property="og:site_name" />
-<meta content={siteConfig.ogLocale} property="og:locale" />
-<meta content={socialImageURL} property="og:image" />
-<meta content="1200" property="og:image:width" />
-<meta content="630" property="og:image:height" />
-{
-	articleDate && (
-		<>
-			<meta content={siteConfig.author} property="article:author" />
-			<meta content={articleDate} property="article:published_time" />
-		</>
-	)
-}
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={pageType} />
+<meta property="og:url" content={formatCanonicalURL(canonicalURL)} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+{resolvedImage?.src && <meta property="og:image" content={resolvedImage.src} />}
+{resolvedImage?.alt && <meta property="og:image:alt" content={resolvedImage.alt} />}
 
-{/* Twitter */}
-<meta content="summary_large_image" property="twitter:card" />
-<meta content={canonicalURL} property="twitter:url" />
-<meta content={title} property="twitter:title" />
-<meta content={description} property="twitter:description" />
-<meta content={socialImageURL} property="twitter:image" />
-
-{/* Sitemap */}
-<link href="/sitemap-index.xml" rel="sitemap" />
-
-{/* RSS auto-discovery */}
-<link href="/rss.xml" rel="alternate" title={siteConfig.title} type="application/rss+xml" />
-
-{/* Webmentions */}
-{
-	siteConfig.webmentions && (
-		<>
-			<link href={siteConfig.webmentions.link} rel="webmention" />
-			{siteConfig.webmentions.pingback && (
-				<link href={siteConfig.webmentions.pingback} rel="pingback" />
-			)}
-		</>
-	)
-}
-
-<meta content={Astro.generator} name="generator" />
+<!-- X/Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={formatCanonicalURL(canonicalURL)} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+{resolvedImage?.src && <meta property="twitter:image" content={resolvedImage.src} />}
+{resolvedImage?.alt && <meta name="twitter:image:alt" content={resolvedImage?.alt} />}
