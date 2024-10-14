@@ -54,7 +54,7 @@ export const CONFIG: SiteConfig = {
 	title: "Software Developer",
 	description: `Hello! I am a software developer located in the Philadelphia area. I have over eight years of experience in development working across multiple industries, and my primary technologies include ASP.NET and React. 
 	I graduated from Lehigh University with a B.S. in Computer Science. While attending school, I was a proud member of the Lehigh University Marching 97. 
-	When not writing code, I enjoy playing video games and tinkering with computers. I also enjoy watching all the Philadelphia sports teams.`,
+	When not writing code, I enjoy playing video games, tinkering with computers, and watching Philadelphia sports.`,
 	socials: [
 		{
 			platform: "GitHub",
