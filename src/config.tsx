@@ -42,7 +42,7 @@ export type SiteConfig = {
 
 export const CONFIG: SiteConfig = {
 	meta: {
-		title: "Andrew Burleigh",
+		title: "burleigh.zone",
 		description: "This is my personal website.",
 		image: {
 			src: "/headshot.jpg",
