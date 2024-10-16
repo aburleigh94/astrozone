@@ -1,9 +1,5 @@
-import { DiscordIcon } from "@/components/icons/discord";
 import { GithubIcon } from "@/components/icons/github";
 import { LinkedInIcon } from "@/components/icons/linkedin";
-import { TwitchIcon } from "@/components/icons/twitch";
-import { XIcon } from "@/components/icons/x";
-import { YouTubeIcon } from "@/components/icons/youtube";
 import type React from "react";
 
 export type Image = {
