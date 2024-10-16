@@ -19,7 +19,7 @@ category: games
 
 ### 5. Pentiment
 
-### 4. God of War
+### 4. God of War Ragnarök
 
 ### 3. Vampire Survivors
 

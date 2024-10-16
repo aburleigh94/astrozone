@@ -15,13 +15,13 @@ category: games
 
 ### 7. Deathloop
 
-### 6. Forza
+### 6. Forza Horizon 5
 
 ### 5. The Forgotten City
 
-### 4. Ratchet and Clank
+### 4. Ratchet & Clank: Rift Apart
 
-### 3. Monster Hunter: Rise
+### 3. Monster Hunter Rise
 
 ### 2. Valheim
 
