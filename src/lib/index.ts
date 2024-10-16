@@ -1,15 +1,15 @@
 export {
-	getPosts,
-	getAllCategories,
-	getAllTags,
-	getPostsByCategory,
-	getPostsByTag,
+  getPosts,
+  getAllCategories,
+  getAllTags,
+  getPostsByCategory,
+  getPostsByTag,
 } from "./post";
 export {
-	cn,
-	slugify,
-	formatDate,
-	reformatDate,
-	calculateReadingTime,
-	sortItemsByDateDesc,
+  cn,
+  slugify,
+  formatDate,
+  reformatDate,
+  calculateReadingTime,
+  sortItemsByDateDesc,
 } from "./utils";

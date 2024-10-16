@@ -4,9 +4,10 @@ socialImage: qseegzssgetrybgbplrv.jpg
 draft: false
 publishedAt: 2018-12-27T04:09:00.000Z
 description: There were a lot of great games released in 2018. Here are some of them.
-tags: [ "Top Ten Games" ]
+tags: ["Top Ten Games"]
 category: games
 ---
+
 As I look back at the games that were released in 2018, I am once again amazed by the number of quality titles the industry has been putting out on a consistent basis. While this year also had its share of disappointing garbage, I feel confident saying that there has never been a better time to be playing video games. The fall season was especially jam packed, and I'm still catching up on a few games which may or may not supersede the ones on this list. However, I feel that each of these choices are truly fantastic games in their own right and are deserving of recognition as some of the best games of 2018.
 
 ### 10. Overcooked 2

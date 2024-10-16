@@ -1,4 +1,5 @@
 # astrozone
+
 Personal website created with Astro. Originally cloned from https://github.com/danielecammarata/astro-gaia
 
 ## Theme Features:
@@ -67,7 +68,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 | `npm check`               | Biome formatting and linting checks              |
 | `npm write`               | Biome formatting and linting issues fix          |
-
 
 ## Credits
 

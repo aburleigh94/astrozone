@@ -4,9 +4,10 @@ socialImage: sc8lik.png
 draft: false
 publishedAt: 2021-07-22T00:00:00.000Z
 description: Just in time for August, it's my favorite games of 2020.
-tags: [ "Top Ten Games" ]
+tags: ["Top Ten Games"]
 category: games
 ---
+
 I realized this month that it's over halfway through 2021 and I've been too lazy to write about my favorite games of 2020. Since I'm still feeling lazy I'm going to keep this short, but I figured there's no point in me keeping a list if I'm not going to do anything with it. Here we go.
 
 ### 10. Tony Hawk's Pro Skater 1 + 2

@@ -4,9 +4,10 @@ socialImage: image.jpg
 draft: false
 publishedAt: 2020-01-05T19:40:34.056Z
 description: These games are da bomb.
-tags: [ "Top Ten Games" ]
+tags: ["Top Ten Games"]
 category: games
 ---
+
 I'm always glad to be surprised by new games. As someone who usually keeps a close eye on gaming news through social media and podcasts, I sometimes miss the feeling of finding a game that I haven't heard of before and playing it for the first time. So many of my favorite games this year either flew under my personal radar or released unexpectedly, and it was fun to jump into them without any prior expectations.
 
 ### 10. Hypnospace Outlaw
@@ -19,7 +20,7 @@ I honestly think I'm a little too young to truly appreciate the kind of nostalgi
 
 ![](sc6qen.png)
 
-Honestly, I think this game is the Call of Duty that people have been waiting for. I am admittedly a sucker for these games regardless of their quality, but Call of Duty: Modern Warfare feels like it found heights that the series hasn't reached since *maybe* Modern Warfare 2 or Black Ops 1. The campaign missions were mostly well-executed and had a few new ideas such as the night vision sequences that kept me interested in playing. The story I found to be hit-or-miss, with issues like the notable ["Highway of Death" controversy](https://www.polygon.com/2019/10/30/20938550/call-of-duty-modern-warfare-highway-of-death-controversy) detracting from the experience. However, I think the game particularly shines in the multiplayer, which kept me engaged for far longer than the past few games in the series. The guns all feel great to use, the attachment system is deep, and I found the overall map rotation to be pretty solid (no doubt helped out by the inclusion of several legacy maps from previous games). There was also no season pass for this game, which kept the playerbase on the same page with respect to the maps they had available to play. Activision also added crossplay this time around, which will no doubt make it easy to find games for a much longer period of time. I just wish they'd keep updating this game instead of churning out a new one next year.
+Honestly, I think this game is the Call of Duty that people have been waiting for. I am admittedly a sucker for these games regardless of their quality, but Call of Duty: Modern Warfare feels like it found heights that the series hasn't reached since _maybe_ Modern Warfare 2 or Black Ops 1. The campaign missions were mostly well-executed and had a few new ideas such as the night vision sequences that kept me interested in playing. The story I found to be hit-or-miss, with issues like the notable ["Highway of Death" controversy](https://www.polygon.com/2019/10/30/20938550/call-of-duty-modern-warfare-highway-of-death-controversy) detracting from the experience. However, I think the game particularly shines in the multiplayer, which kept me engaged for far longer than the past few games in the series. The guns all feel great to use, the attachment system is deep, and I found the overall map rotation to be pretty solid (no doubt helped out by the inclusion of several legacy maps from previous games). There was also no season pass for this game, which kept the playerbase on the same page with respect to the maps they had available to play. Activision also added crossplay this time around, which will no doubt make it easy to find games for a much longer period of time. I just wish they'd keep updating this game instead of churning out a new one next year.
 
 ### 8. Apex Legends
 
@@ -37,7 +38,7 @@ The Outer Worlds is a perfectly acceptable (if short) RPG that I had been keepin
 
 ![](pho7vc4usrrbnu7wjgct.png)
 
-I have been championing Ace Combat to anyone who would listen for years to no avail and desperately hoping that another game in the main series would finally get made. This year, I finally got my wish. Ace Combat 7 does a pretty good job of living up to its predecessors and has no shortage of intense dogfights, epic orchestral music, and dramatic anime cutscenes. The mission types are reasonably varied with plenty of dogfighting, bombing runs, and stealth missions. The story comes with a generous dose of Ace Combat cheesiness but serves as a good way  to introduce all the nonsensical aircraft and weaponry that the series has always been known for. Massive drone ship that spawns tons of tiny attack drones to destroy your allies? Yup. Gigantic cannons originally used to shoot asteroids out of the sky? Sure. The story also ties back into previous games, which is always fun for veterans of the series. I haven't tried the multiplayer or VR modes yet, but a new campaign was really all I needed.
+I have been championing Ace Combat to anyone who would listen for years to no avail and desperately hoping that another game in the main series would finally get made. This year, I finally got my wish. Ace Combat 7 does a pretty good job of living up to its predecessors and has no shortage of intense dogfights, epic orchestral music, and dramatic anime cutscenes. The mission types are reasonably varied with plenty of dogfighting, bombing runs, and stealth missions. The story comes with a generous dose of Ace Combat cheesiness but serves as a good way to introduce all the nonsensical aircraft and weaponry that the series has always been known for. Massive drone ship that spawns tons of tiny attack drones to destroy your allies? Yup. Gigantic cannons originally used to shoot asteroids out of the sky? Sure. The story also ties back into previous games, which is always fun for veterans of the series. I haven't tried the multiplayer or VR modes yet, but a new campaign was really all I needed.
 
 ### 5. Slay the Spire
 

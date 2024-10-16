@@ -6,19 +6,19 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import { reformatDate, sortItemsByDateDesc } from "@/lib";
 
 export async function getStaticPaths() {
-	const posts = (await getCollection("blog")).sort(sortItemsByDateDesc);
-	const { categories } = CONFIG;
-	return categories.map(({ page }) => ({
-		params: { page },
-		props: {
-			posts: page
-				? posts.filter((post: CollectionEntry<"blog">) =>
-						post.data.category?.includes(page),
-					)
-				: posts,
-			currentPage: page,
-		},
-	}));
+  const posts = (await getCollection("blog")).sort(sortItemsByDateDesc);
+  const { categories } = CONFIG;
+  return categories.map(({ page }) => ({
+    params: { page },
+    props: {
+      posts: page
+        ? posts.filter((post: CollectionEntry<"blog">) =>
+            post.data.category?.includes(page),
+          )
+        : posts,
+      currentPage: page,
+    },
+  }));
 }
 
 const { posts, currentPage } = Astro.props;
@@ -28,10 +28,11 @@ const { posts, currentPage } = Astro.props;
   title="Blog"
   description="Embark on a journey of personal insights and experiences through my blog"
 >
-<div class="grid grid-cols-1 gap-10 pb-10 w-full">
+  <div class="grid grid-cols-1 gap-10 pb-10 w-full">
     <div class="flex flex-col">
-      <a href="/"
-      class="flex flex-row space-x-2 items-center group cursor-pointer mb-4 animate-slide-from-down-and-fade-1"
+      <a
+        href="/"
+        class="flex flex-row space-x-2 items-center group cursor-pointer mb-4 animate-slide-from-down-and-fade-1"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -48,19 +49,30 @@ const { posts, currentPage } = Astro.props;
         </svg>
         <span class="text-secondaryDarker">Back</span>
       </a>
-      <span class="text-4xl font-bold mb-6 md:mb-4 animate-slide-from-down-and-fade-2"> All Posts </span>
-      <div class="flex flex-row space-x-4 mb-6 md:mb-4 text-sm  overflow-x-auto line-clamp-1 text-nowrap animate-slide-from-down-and-fade-3">
+      <span
+        class="text-4xl font-bold mb-6 md:mb-4 animate-slide-from-down-and-fade-2"
+      >
+        All Posts
+      </span>
+      <div
+        class="flex flex-row space-x-4 mb-6 md:mb-4 text-sm overflow-x-auto line-clamp-1 text-nowrap animate-slide-from-down-and-fade-3"
+      >
         {
           CONFIG.categories.map(({ page, title, href }) => (
             <a
               href={href}
-              class={`${currentPage === page ? 'text-secondaryDark underline' : 'text-secondaryDarker'} hover:text-secondaryDark duration-200 hover:underline`}
-          > {title} </a>
+              class={`${currentPage === page ? "text-secondaryDark underline" : "text-secondaryDarker"} hover:text-secondaryDark duration-200 hover:underline`}
+            >
+              {" "}
+              {title}{" "}
+            </a>
           ))
         }
       </div>
       <div>
-        <div class="grid grid-cols-1 gap-6 md:gap-1 md:-px-2 animate-slide-from-down-and-fade-3">
+        <div
+          class="grid grid-cols-1 gap-6 md:gap-1 md:-px-2 animate-slide-from-down-and-fade-3"
+        >
           {
             posts
               .sort((a: any, b: any) => {
@@ -73,15 +85,14 @@ const { posts, currentPage } = Astro.props;
               })
               .map((post: any) => {
                 return (
-                  <a href={`/posts/${post.slug}`}
-                  class="flex flex-row space-x-2 justify-between items-start duration-300 md:hover:bg-hoverBackground -mx-4 p-4 rounded-lg cursor-pointer"
+                  <a
+                    href={`/posts/${post.slug}`}
+                    class="flex flex-row space-x-2 justify-between items-start duration-300 md:hover:bg-hoverBackground -mx-4 p-4 rounded-lg cursor-pointer"
                   >
                     <span class="text-secondaryDark">{post.data.title}</span>
 
                     <div class="flex flex-row space-x-2 items-center text-secondaryDarker whitespace-nowrap">
-                      <span>
-                        {reformatDate(post.data.publishedAt)}
-                      </span>
+                      <span>{reformatDate(post.data.publishedAt)}</span>
                     </div>
                   </a>
                 );
