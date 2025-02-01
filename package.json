@@ -19,7 +19,7 @@
     "@astrojs/tailwind": "^5.1.4",
     "@headlessui/tailwindcss": "^0.2.1",
     "@radix-ui/react-tooltip": "^1.1.7",
-    "@tailwindcss/typography": "^0.5.13",
+    "@tailwindcss/typography": "^0.5.16",
     "astro": "^4.16.8",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
