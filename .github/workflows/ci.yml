@@ -26,7 +26,7 @@ jobs:
 
         # ensure build works
       - name: Run build
-        run: npm build
+        run: npm run build
         env:
           TINACLIENTID: ${{ secrets.TINACLIENTID }}
           TINATOKEN: ${{ secrets.TINATOKEN }}
