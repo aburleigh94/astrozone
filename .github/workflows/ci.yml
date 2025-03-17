@@ -13,6 +13,7 @@ jobs:
   lint:
     name: Check for build and type issues
     runs-on: ubuntu-latest
+    environment: prod
     env:
       TINACLIENT: ${{ secrets.TINACLIENT }}
       TINATOKEN: ${{ secrets.TINATOKEN }}
