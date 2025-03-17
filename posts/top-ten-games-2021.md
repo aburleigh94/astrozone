@@ -1,10 +1,10 @@
 ---
 title: Top Ten Games 2021
-description: "My top ten games of 2021."
-publishedAt: 04 May 2024 12:44
-tags: ["Top Ten Games"]
-draft: false
-category: games
+slug: top-ten-games-2021
+description: My top ten games of 2021.
+tags:
+  - games
+added: 2024-05-04T00:00:00.000Z
 ---
 
 ### 10. Ghost of Tsushima: Director’s Cut

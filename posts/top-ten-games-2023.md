@@ -1,10 +1,10 @@
 ---
 title: Top Ten Games 2023
-description: "My top ten games of 2023."
-publishedAt: 04 May 2024 12:46
-tags: ["Top Ten Games"]
-draft: false
-category: games
+slug: top-ten-games-2023
+description: My top ten games of 2023.
+tags:
+  - games
+added: 2024-05-04T00:00:00.000Z
 ---
 
 ### 10. Warhammer 40,000: Boltgun

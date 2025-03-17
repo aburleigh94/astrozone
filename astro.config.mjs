@@ -3,7 +3,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://burleigh.zone/",
+  site: "https://burleigh.zone",
   base: "/",
   integrations: [sitemap()],
   markdown: {
