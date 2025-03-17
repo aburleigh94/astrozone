@@ -1,13 +1,13 @@
 ---
 title: Top Ten Games 2020
 slug: top-ten-games-2020
-description: Just in time for August, it's my favorite games of 2020.
+description: 'Just in time for August, it''s my favorite games of 2020.'
 tags:
   - games
 added: 2021-07-22T04:00:00.000Z
 ---
 
-I realized this month that it's over halfway through 2021 and I've been too lazy to write about my favorite games of 2020. Since I'm still feeling lazy I'm going to keep this short, but I figured there's no point in me keeping a list if I'm not going to do anything with it. Here we go.
+I realized this month that it's over halfway through 2021 and I've been too lazy to write about my favorite games of 2020. Since I'm still feeling lazy I'm going to keep this short, but I figured there's no point in keeping a list if I'm not going to do anything with it. Here we go.
 
 ### 10. Tony Hawk's Pro Skater 1 + 2
 
