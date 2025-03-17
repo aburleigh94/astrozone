@@ -7,7 +7,7 @@ tags:
 added: 2024-05-04T04:01:00.000Z
 ---
 
-### 10. Ghost of Tsushima: Director’s Cut
+### 10. Ghost of Tsushima: Director's Cut
 
 ### 9. Splitgate
 
