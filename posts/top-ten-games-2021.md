@@ -4,7 +4,7 @@ slug: top-ten-games-2021
 description: My top ten games of 2021.
 tags:
   - games
-added: 2024-05-04T00:00:00.000Z
+added: 2024-05-04T04:01:00.000Z
 ---
 
 ### 10. Ghost of Tsushima: Director’s Cut

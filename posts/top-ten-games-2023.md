@@ -4,7 +4,7 @@ slug: top-ten-games-2023
 description: My top ten games of 2023.
 tags:
   - games
-added: 2024-05-04T00:00:00.000Z
+added: 2024-05-04T04:03:00.000Z
 ---
 
 ### 10. Warhammer 40,000: Boltgun
