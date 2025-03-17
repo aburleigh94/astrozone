@@ -7,14 +7,10 @@ on:
   pull_request:
     branches: [main]
 
-permissions:
-  contents: read
-
 jobs:
   lint:
     name: Check for build and type issues
     runs-on: ubuntu-latest
-    environment: prod
 
     steps:
       - name: checkout
