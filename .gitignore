@@ -1,5 +1,6 @@
 # build output
 dist/
+
 # generated types
 .astro/
 
@@ -14,6 +15,7 @@ pnpm-debug.log*
 
 # environment variables
 .env
+.env.development
 .env.production
 
 # macOS-specific files
@@ -24,3 +26,6 @@ pnpm-debug.log*
 
 # visualstudio code setting folder
 .vscode
+
+# macOS-specific files
+.DS_Store
