@@ -71,7 +71,7 @@ export default defineConfig({
               {
                 value: "programming",
                 label: "Programming",
-              }
+              },
             ],
           },
           {
