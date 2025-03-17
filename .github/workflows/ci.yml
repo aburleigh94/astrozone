@@ -14,10 +14,6 @@ jobs:
     name: Check for build and type issues
     runs-on: ubuntu-latest
     environment: prod
-    env:
-      TINACLIENT: ${{ secrets.TINACLIENT }}
-      TINATOKEN: ${{ secrets.TINATOKEN }}
-      TINASEARCH: ${{ secrets.TINASEARCH }}
 
     steps:
       - name: checkout
@@ -52,4 +48,8 @@ jobs:
 
         # ensure build works
       - name: Run build
+        env:
+          TINACLIENT: ${{ secrets.TINACLIENT }}
+          TINATOKEN: ${{ secrets.TINATOKEN }}
+          TINASEARCH: ${{ secrets.TINASEARCH }}
         run: pnpm build
