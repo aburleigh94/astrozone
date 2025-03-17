@@ -13,6 +13,10 @@ jobs:
   lint:
     name: Check for build and type issues
     runs-on: ubuntu-latest
+    env:
+      TINACLIENT: ${{ secrets.TINACLIENT }}
+      TINATOKEN: ${{ secrets.TINATOKEN }}
+      TINASEARCH: ${{ secrets.TINASEARCH }}
 
     steps:
       - name: checkout
