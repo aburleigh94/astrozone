@@ -47,6 +47,6 @@ jobs:
       - name: Run build
         run: pnpm build
         env:
-          TINACLIENT: ${{ secrets.TINACLIENT }}
+          TINACLIENTID: ${{ secrets.TINACLIENTID }}
           TINATOKEN: ${{ secrets.TINATOKEN }}
           TINASEARCH: ${{ secrets.TINASEARCH }}
