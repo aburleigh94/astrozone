@@ -49,8 +49,8 @@ jobs:
 
         # ensure build works
       - name: Run build
+        run: pnpm build
         env:
           TINACLIENT: ${{ secrets.TINACLIENT }}
           TINATOKEN: ${{ secrets.TINATOKEN }}
           TINASEARCH: ${{ secrets.TINASEARCH }}
-        run: pnpm build
