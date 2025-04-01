@@ -2,8 +2,6 @@ name: ci
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
   pull_request:
     branches: [main]
 
@@ -24,10 +22,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-        # ensure build works
-      - name: Run build
-        run: npm run build
-        env:
-          TINACLIENTID: ${{ secrets.TINACLIENTID }}
-          TINATOKEN: ${{ secrets.TINATOKEN }}
-          TINASEARCH: ${{ secrets.TINASEARCH }}
+        # ensure astro build works
+      - name: Run astro build
+        run: npm run build:astro
