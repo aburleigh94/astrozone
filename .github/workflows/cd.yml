@@ -1,0 +1,31 @@
+name: cd
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  lint:
+    name: Check for build and type issues
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: install node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+
+        # ensure build works
+      - name: Run build
+        run: npm run build
+        env:
+          TINACLIENTID: ${{ secrets.TINACLIENTID }}
+          TINATOKEN: ${{ secrets.TINATOKEN }}
+          TINASEARCH: ${{ secrets.TINASEARCH }}
