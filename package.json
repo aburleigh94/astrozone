@@ -6,6 +6,7 @@
     "dev": "npx tinacms dev -c \"astro dev\"",
     "start": "astro dev",
     "build": "tinacms build && astro build",
+    "build:astro": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
