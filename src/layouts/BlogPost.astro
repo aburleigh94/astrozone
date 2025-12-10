@@ -37,7 +37,7 @@ if (updated) {
     <main>
       <article>
         {heroImage && <img width={720} height={360} src={heroImage} alt="" />}
-        <h1 class="article-title">{title}</h1>
+        <h1 class="text-4xl font-bold my-4">{title}</h1>
         {
           updated ? (
             <span>
@@ -49,7 +49,7 @@ if (updated) {
         }
         <Tags tags={tags} />
         <hr />
-        <div class="blog-post">
+        <div class="text-lg">
           <slot />
         </div>
       </article>

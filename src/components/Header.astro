@@ -4,14 +4,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 ---
 
 <header>
-  <div class="header-section">
-    <div class="header-frame">
-      <h1>{SITE_TITLE}</h1>
-      <h2>{SITE_DESCRIPTION}</h2>
+  <div class="flex items-center justify-center flex-wrap">
+    <div class="max-w-md">
+      <h1 class="text-4xl font-bold">{SITE_TITLE}</h1>
+      <h2 class="text-xl">{SITE_DESCRIPTION}</h2>
     </div>
   </div>
 </header>
-<nav>
+<nav class="sticky top-0 text-center bg-transwhite backdrop-blur-sm dark:bg-transblack">
   <HeaderLink href="/">home</HeaderLink>
   <HeaderLink href="/posts">posts</HeaderLink>
   <HeaderLink href="https://github.com/aburleigh94">github</HeaderLink>

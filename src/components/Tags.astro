@@ -2,13 +2,16 @@
 const { tags, all } = Astro.props;
 ---
 
-{all && <h3 class="tag-title">View posts by tag</h3>}
-<div class=`${all && "tags"}`>
+{all && <h3 class="font-normal text-black dark:text-white">View posts by tag</h3>}
+<div class:list={[{ "flex flex-wrap justify-center": all }]}>
   {
     tags &&
       tags.map((tag) => (
         <>
-          <a class="tag" href={`/tag/${tag}`}>
+          <a
+            class="inline-block mr-5 text-black dark:text-gray text-sm hover:font-bold"
+            href={`/tag/${tag}`}
+          >
             #{tag}
           </a>
           {` `}

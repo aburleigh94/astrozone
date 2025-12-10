@@ -2,9 +2,9 @@
 const { slug, title, tags, description, date } = Astro.props;
 ---
 
-<li class="post">
-  <a href={`/post/${slug}/`} class="title">{title}</a>
-  <time datetime={date}>
+<li class="my-8">
+  <a href={`/post/${slug}/`} class="text-xl">{title}</a>
+  <time class="italic text-gray" datetime={date}>
     {
       new Date(date).toLocaleDateString("en-us", {
         year: "numeric",
@@ -19,7 +19,10 @@ const { slug, title, tags, description, date } = Astro.props;
     {
       tags &&
         tags.map((tag) => (
-          <a class="tag" href={`/tag/${tag}`}>
+          <a
+            class="inline-block mr-5 text-black dark:text-gray text-sm hover:font-bold"
+            href={`/tag/${tag}`}
+          >
             #{tag}
           </a>
         ))
