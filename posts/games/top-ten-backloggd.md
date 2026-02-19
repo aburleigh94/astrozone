@@ -1,8 +1,9 @@
 ---
-title: Moving my top ten games
+title: Tracking my top ten games
 slug: top-ten-backloggd
 description: Tracking my top ten games lists on Backloggd
-tags: []
+tags:
+  - games
 added: 2026-02-19T04:00:42.698Z
 ---
 
