@@ -13,7 +13,7 @@
   "devDependencies": {
     "@astrojs/rss": "^4.0.15",
     "@astrojs/sitemap": "^3.7.0",
-    "astro": "^5.15.3",
+    "astro": "^5.17.3",
     "prettier": "^3.8.1",
     "prettier-plugin-astro": "^0.14.1"
   },
