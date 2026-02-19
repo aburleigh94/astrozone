@@ -1,5 +1,5 @@
 ---
-title: Tracking my top ten games
+title: A new home for my favorite games
 slug: top-ten-backloggd
 description: Tracking my top ten games lists on Backloggd
 tags:
