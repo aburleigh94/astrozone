@@ -19,6 +19,6 @@
   },
   "dependencies": {
     "@tinacms/cli": "^2.1.5",
-    "tinacms": "^3.3.2"
+    "tinacms": "^3.5.0"
   }
 }
